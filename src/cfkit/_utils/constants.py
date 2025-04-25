@@ -5,7 +5,6 @@ Documentation
 from pathlib import Path
 from typing import TypeAlias
 
-
 Directory: TypeAlias = Path
 
 PROBLEM_CODE_PATTERN = r"\A[1-9]{1}\d{,3}[A-z]\d{,2}"
@@ -42,82 +41,77 @@ Available commands:
     gen     generate solution file with the default template if found
     run     test solution file against samples and print the verdict response
     config  config cfkit
+    prepare generate solution file with the specified template
 
 Type cf <command> --help for usage help on a specific command.
 For example, cf run --help will list all testing options.
 """
 
 EXTENSIONS = {
-  "c": "C",
-  "cpp": "C++",
-  "cxx": "C++",
-  "C": "C++",
-  "cc": "C++",
-  "c++": "C++",
-  "cs": "C#",
-  "d": "D",
-  "go": "Go",
-  "hs": "Haskell",
-  "java": "Java",
-  "kt": "Kotlin",
-  "ml": "OCaml",
-  "dpr": "Delphi",
-  "pas": "Pascal",
-  "pl": "Perl",
-  "php": "PHP",
-  "py": "Python",
-  "rb": "Ruby",
-  "rs": "Rust",
-  "scala": "Scala",
-  "js": "JavaScript"
+    "c": "C",
+    "cpp": "C++",
+    "cxx": "C++",
+    "C": "C++",
+    "cc": "C++",
+    "c++": "C++",
+    "cs": "C#",
+    "d": "D",
+    "go": "Go",
+    "hs": "Haskell",
+    "java": "Java",
+    "kt": "Kotlin",
+    "ml": "OCaml",
+    "dpr": "Delphi",
+    "pas": "Pascal",
+    "pl": "Perl",
+    "php": "PHP",
+    "py": "Python",
+    "rb": "Ruby",
+    "rs": "Rust",
+    "scala": "Scala",
+    "js": "JavaScript",
 }
 
 LANGUAGES = [
-  'C',
-  'C++',
-  'C#',
-  'D',
-  'Go',
-  'Haskell',
-  'Java',
-  'Kotlin',
-  'OCaml',
-  'Delphi',
-  'Pascal',
-  'Perl',
-  'PHP',
-  'Python',
-  'Ruby',
-  'Rust',
-  'Scala',
-  'JavaScript'
+    "C",
+    "C++",
+    "C#",
+    "D",
+    "Go",
+    "Haskell",
+    "Java",
+    "Kotlin",
+    "OCaml",
+    "Delphi",
+    "Pascal",
+    "Perl",
+    "PHP",
+    "Python",
+    "Ruby",
+    "Rust",
+    "Scala",
+    "JavaScript",
 ]
 
 LANGUAGES_EXTENSIONS = {
-  'C': ['c'],
-  'C++': ['cpp', 'cxx', 'C', 'cc', 'c++'],
-  'C#': ['cs'],
-  'D': ['d'],
-  'Go': ['go'],
-  'Haskell': ['hs'],
-  'Java': ['java'],
-  'Kotlin': ['kt'],
-  'OCaml': ['ml'],
-  'Delphi': ['dpr'],
-  'Pascal': ['pas'],
-  'Perl': ['pl'],
-  'PHP': ['php'],
-  'Python': ['py'],
-  'Ruby': ['rb'],
-  'Rust': ['rs'],
-  'Scala': ['scala'],
-  'JavaScript': ['js']
+    "C": ["c"],
+    "C++": ["cpp", "cxx", "C", "cc", "c++"],
+    "C#": ["cs"],
+    "D": ["d"],
+    "Go": ["go"],
+    "Haskell": ["hs"],
+    "Java": ["java"],
+    "Kotlin": ["kt"],
+    "OCaml": ["ml"],
+    "Delphi": ["dpr"],
+    "Pascal": ["pas"],
+    "Perl": ["pl"],
+    "PHP": ["php"],
+    "Python": ["py"],
+    "Ruby": ["rb"],
+    "Rust": ["rs"],
+    "Scala": ["scala"],
+    "JavaScript": ["js"],
 }
 
-ALL_ACTIONS = (
-  "list", 
-  "parse", 
-  "gen", 
-  "run",
-  "config"
-)
+ALL_ACTIONS = ("list", "parse", "gen", "run", "config", "prepare")
